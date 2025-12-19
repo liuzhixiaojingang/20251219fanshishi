@@ -12,6 +12,11 @@ import shap
 import networkx as nx
 import matplotlib.patches as mpatches
 
+# 设置中文字体 - 放在最前面
+plt.rcParams['font.sans-serif'] = ['SimHei', 'Microsoft YaHei', 'Arial Unicode MS']
+plt.rcParams['axes.unicode_minus'] = False
+sns.set(font='SimHei')
+
 # 设置页面配置
 st.set_page_config(page_title="烧伤智能识别系统", page_icon="🔥", layout="wide", initial_sidebar_state="expanded")
 
@@ -1895,4 +1900,5 @@ elif app_mode == "⚙️ 系统设置":
 
 # 页脚
 st.markdown("---")
+
 st.markdown('<div style="text-align: center; color: #666; font-family: "Microsoft YaHei", sans-serif;">🔥 烧伤智能识别系统 | 基于机器学习的医疗辅助诊断工具 | v1.0 | 本地部署版本</div>', unsafe_allow_html=True)
