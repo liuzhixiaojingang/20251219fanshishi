@@ -1900,5 +1900,4 @@ elif app_mode == "⚙️ 系统设置":
 
 # 页脚
 st.markdown("---")
-
 st.markdown('<div style="text-align: center; color: #666; font-family: "Microsoft YaHei", sans-serif;">🔥 烧伤智能识别系统 | 基于机器学习的医疗辅助诊断工具 | v1.0 | 本地部署版本</div>', unsafe_allow_html=True)
